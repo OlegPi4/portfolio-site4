@@ -5,15 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
    /*инициализация модального окна*/
    // var modal = document.querySelectorAll('.modal');
    // var instancesModal = M.Modal.init(modal);
-   // /*инициализация галереи*/   
-   // var boxed = document.querySelectorAll('.materialboxed');
-   // var instancesBoxed = M.Materialbox.init(boxed);
+   /*инициализация галереи*/   
+   var boxed = document.querySelectorAll('.materialboxed');
+   var instancesBoxed = M.Materialbox.init(boxed);
  });
-/*-----------Функции-------------*/
-
-
-
-/*---------События------------*/
 
 
 

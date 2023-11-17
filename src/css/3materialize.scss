@@ -268,3 +268,43 @@
      padding: 16px 16px 0;
    }
  }
+/*Galary*/
+.materialboxed {
+  display: block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  -webkit-backface-visibility: hidden;
+}
+
+.materialboxed:hover:not(.active) {
+  opacity: .8;
+}
+
+.materialboxed.active {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+  pointer-events: none;
+}
+
+/*divider*/
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.dropdown-content li.divider {
+  min-height: 0;
+  height: 1px;
+}
+
+.sidenav .divider {
+  margin: 8px 0 0 0;
+}
