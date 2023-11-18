@@ -67,7 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 }, false);
-/*отображение меню или бургера в зависимомти от изменения ширины екрана*/
+/*Отображение меню или бургера в зависимомти от изменения ширины екрана*/
+/*применение JS отменило корректную работу медиазапросов для єтой цели*/
 window.addEventListener('resize', () => {
   const width = document.documentElement.clientWidth
   const headerMenu = document.querySelector('.header__menu')
