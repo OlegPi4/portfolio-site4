@@ -19,10 +19,19 @@
         <li><div class="header__logotype-sm">ArchiWeb</div></li>
         <li><div class="divider"></div></li>
         <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="#!"><i class="material-icons">people</i>Projects</a></li>
+        <li><a href="#project"><i class="material-icons">people</i>Projects</a></li>
         <li><a href="#about"><i class="material-icons">grade</i>About</a></li>
-        <li><a href="#contact"><i class="material-icons">phone</i>Contact</a></li>
-        <li><a href="#!"><i class="material-icons">search</i>Search</a></li>            
+        <li><a href="#!"><i class="material-icons">phone</i>Contact</a></li>
+        <li class="li-search"><a href="#!" class="search-side"><i class="material-icons">search</i>Search</a></li>     
+        <li class="searchS-box">
+            <input type="text" class="searchS-txt" name="" placeholder="Type to search">
+            <div class="searchS-icon">
+                <a href="#!" class="searchS-btn"><i class="material-icons">search</i></a>    
+            </div>
+            <div class="closeS-icon">
+                <a href="#!" class="close-btn"><i class="material-icons">close</i></a>    
+            </div>
+        </li>       
         <li><div class="divider"></div></li>
         <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Close</a></li>
     </ul>
@@ -31,13 +40,22 @@
             <div class="header__logotype">ArchiWeb</div>
             <ul class="header__menu">
                 <li class="header__menu__item"><a href="#!">Home</a></li>
-                <li class="header__menu__item"><a href="#!">Project</a></li>
-                <li class="header__menu__item"><a href="#!">About</a></li>
+                <li class="header__menu__item"><a href="#project">Project</a></li>
+                <li class="header__menu__item"><a href="#about">About</a></li>
                 <li class="header__menu__item"><a href="#!">Contact</a></li>
-                <li class="header__menu__item"><a href="#!"><img src="../dist/img/Vector.svg" alt="search"></a></li>
+                <li class="header__menu__item"><a href="#!" class="search-menu"><img src="../dist/img/Vector.svg" alt="search"></a></li>
             </ul>
             <div class="burger sidenav-trigger" data-target="slide-out">
-                <a href="#!"><img src="../dist/img/burgerS-sm.svg" alt="burger-menu"></a>
+                <a class="img-burger" href="#!"><img src="../dist/img/burgerS-sm.svg" alt="burger-menu"></a>
+            </div>
+            <div class="search-box" data-search="0">
+                <input type="text" class="search-txt" name="" placeholder="Type to search">
+                <div class="search-icon">
+                    <a href="#!" class="search-btn"><i class="material-icons">search</i></a>    
+                </div>
+                <div class="close-icon">
+                    <a href="#!" class="close-btn"><i class="material-icons">close</i></a>    
+                </div>
             </div>
         </div>
     </div>
@@ -85,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="contain">
             <div class="about__wrapper">
                 <div class="about__img">
@@ -113,7 +131,7 @@
         </div>
     </div>
 
-    <section class="projects">
+    <section class="projects" id="project">
         <div class="contain">
             <div class="progects__title title-h2">Our Projects</div>
             <div class="portfolio__grid">
